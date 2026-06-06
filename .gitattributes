@@ -1,0 +1,13 @@
+# Normalize line endings: store text files with LF in the repo,
+# check out with the platform-native ending. Silences the CRLF warnings.
+* text=auto eol=lf
+
+# Treat common binary types as binary (never normalize)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.docx binary
+*.pt binary
+*.pth binary
+*.npz binary
