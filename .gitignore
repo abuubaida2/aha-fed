@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.ipynb_checkpoints/
+
+# Data and models (never commit)
+data/raw/
+data/processed/
+data/cache/
+checkpoints/
+models/saved/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.npz
+
+# Experiment results
+results/
+runs/
+wandb/
+mlruns/
+outputs/
+multirun/
+*.log
+
+# Thesis build artifacts
+thesis/main.pdf
+thesis/*.aux
+thesis/*.bbl
+thesis/*.blg
+thesis/*.log
+thesis/*.out
+thesis/*.toc
+thesis/*.fls
+thesis/*.fdb_latexmk
+thesis/*.synctex.gz
+
+# Paper / research writeup (kept out of the public code repo)
+paper/
+PROPOSAL.md
+
+# OS
+.DS_Store
+Thumbs.db

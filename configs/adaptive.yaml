@@ -1,0 +1,15 @@
+defaults:
+  - base
+  - _self_
+
+experiment:
+  name: aha_fed_baseline
+
+federated:
+  aggregator: adaptive
+
+aha_fed:
+  alpha: 1.0   # log-volume coefficient
+  beta: 2.0    # distance penalty (D_k)
+  gamma: 2.0   # quality reward (q_k)
+  log_eps: 1.0e-6

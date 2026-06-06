@@ -1,0 +1,40 @@
+defaults:
+  - _self_
+
+experiment:
+  name: baseline
+  seed: 42
+  device: cuda
+
+data:
+  dataset: chexpert
+  num_classes: 14
+  image_size: 224
+  num_workers: 4
+
+model:
+  arch: densenet121
+  pretrained: true
+
+federated:
+  num_rounds: 100
+  num_clients: 4
+  clients_per_round: 4
+  local_epochs: 1
+  local_batch_size: 32
+  local_lr: 0.001
+  aggregator: fedavg
+
+fedprox:
+  mu: 0.01
+
+privacy:
+  enabled: false
+  epsilon: 1.0
+  delta: 1.0e-5
+  max_grad_norm: 1.0
+
+logging:
+  log_every: 1
+  eval_every: 5
+  wandb_project: fl-medical-imaging

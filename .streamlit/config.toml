@@ -1,0 +1,5 @@
+# Streamlit theme. The default primaryColor is red (#FF4B4B); override to grey
+# so the Run button, sliders, progress bar, checkboxes, radios, and focus
+# rings render grey instead of red.
+[theme]
+primaryColor = "#6B7280"
